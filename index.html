@@ -1,0 +1,100 @@
+
+<html> 
+   <head>
+     <link type="text/css" rel="stylesheet" href="main.css" />
+     <title> How to play Fortnite </title>
+     <script>
+      function banner(){ 
+             var text = confirm("Did You Really Want to Click on My Banner?"); 
+             return text; 
+          }
+
+      
+      function answer(){ 
+        var radio = document.getElementsByName("trivia");
+        var selection = false;
+        var message = ""; 
+        
+        for( var i = 0; i < radio.length; i++) {
+          if(radio[i].value == "Saints" && radio[i].checked == true) { 
+            selection = true; 
+          } //end if statement 
+        } //end for loop
+
+        if(selection == true) {
+          message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+        } else { 
+          message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+        }
+          document.getElementById("response").innerHTML = message;
+      
+      } //end function answer
+     </script> 
+   </head> 
+   <body id="background">
+   <a href="http://google.com" onclick="return banner()">
+     <header id="header"> <center> <img src="https://immagini.quotidiano.t/?url=http://p1014p.quotidiano.net:80/polopoly_fs/1.3019600.1491422559!/httpImage/image.jpg_gen/derivatives/wide_680/image.jpg&h=350&w=606" /> </header> 
+   </a>
+     <nav>
+       <ul id="navmenu">
+         <li class="navitem"> <a href="index.html"> Home </a> </li>
+         <li class="navitem"> <a href="videos.html"> Videos </a> </li>
+         <li class="navitem"> <a href="contact.html"> Contact </a> </li>
+       </ul>
+      </nav>
+      <h1 style="color:orange;"> Strategy Guide for Fortnite </h1>
+
+     <div id="rightside">
+       <div class="wrap-trivia"> 
+         <h2> Football Trivia Question:</h2>
+         <p> Who <span class=""> won the 44th</span> Superbowl?</p>
+         <form>
+           <div id="response"> </div>
+           <input type="radio" name="trivia" value="Jets"> New York Jets <br> 
+           <input type="radio" name="trivia" value="Vikings"> Minnesota Vikings <br> 
+           <input type="radio" name="trivia" value="Saints"> New Orleans Saints <br> 
+           <input type="radio" name="trivia" value="Colts"> Indianapolis Colts <br> 
+           <input type="button" value="Click Here" onclick="answer()">
+         </form>
+       </div>
+
+     </div>
+      
+     <div id="leftside">
+     <video width="400" height="220" controls autoplay>
+         <source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+     </video> 
+
+     <audio width="400" height="220" controls autoplay>
+         <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+         Your browser does not support HTML 5 audio.
+     </audio> 
+   </div>
+
+   <div id="clrfloat"></div>
+
+
+     <p class="paragraph"> Have you ever wondered <u>where to find</u> the best loot? Or what time is the right time to attack? Well this is the place to <b>answer all your questions about fortnite</b>. So go ahead and <i>bookmark</i> this site so you can always have the answers at your fingertips. 
+     </p>
+
+   <div class="wrap-list">
+     <ol>
+       <li class="listitem">The best places to land </li>
+       <li class="listitem">What guns you should use </li>
+       <li class="listitem">How to build the best forts </li>
+     </ol>
+   </div>
+   
+   
+  
+
+
+     <img src="https://c1.staticflickr.com/1/347/18349685981_efa0a510d9_b.jpg" />
+     <img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Fortnite-906998.jpg" />
+        <!-- Code From Previous Steps is here --> 
+     <hr>
+     <center> Talmage Glick <a href="http://www.google.com/">My Favorite Website</a> </center>   
+     <center> <footer> Created by Talmage Glick </footer>
+   </body> 
+</html>
